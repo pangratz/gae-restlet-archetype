@@ -10,7 +10,7 @@
 	<name>gae-restlet-archetype</name>
 
 	<properties>
-		<altDeploymentRepository>release-repo::default::file:../../releases</altDeploymentRepository>
+		<altDeploymentRepository>release-repo::default::file:../../repository/releases</altDeploymentRepository>
 	</properties>
 
 	<scm>
@@ -50,7 +50,7 @@
 		<profile>
 			<id>deploy-snapshot</id>
 			<properties>
-				<altDeploymentRepository>snapshot-repo::default::file:snapshots</altDeploymentRepository>
+				<altDeploymentRepository>snapshot-repo::default::file:repository/snapshots</altDeploymentRepository>
 			</properties>
 		</profile>
 	</profiles>
