@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.pangratz</groupId>
+	<artifactId>gae-restlet-archetype</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>maven-archetype</packaging>
+
+	<name>gae-restlet-archetype</name>
+
+	<properties>
+		<altDeploymentRepository>release-repo::default::file:../../repository/releases</altDeploymentRepository>
+	</properties>
+
+	<scm>
+		<connection>scm:git:git@github.com:pangratz/gae-restlet-archetype.git</connection>
+		<url>scm:git:git@github.com:pangratz/gae-restlet-archetype.git</url>
+		<developerConnection>scm:git:git@github.com:pangratz/gae-restlet-archetype.git</developerConnection>
+	</scm>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.0-beta-9</version>
+			</plugin>
+		</plugins>
+
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>2.0</version>
+			</extension>
+		</extensions>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-archetype-plugin</artifactId>
+					<version>2.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>deploy-snapshot</id>
+			<properties>
+				<altDeploymentRepository>snapshot-repo::default::file:repository/snapshots</altDeploymentRepository>
+			</properties>
+		</profile>
+	</profiles>
+
+
+</project>
