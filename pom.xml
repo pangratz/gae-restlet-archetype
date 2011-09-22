@@ -4,7 +4,7 @@
 
 	<groupId>com.pangratz</groupId>
 	<artifactId>gae-restlet-archetype</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>gae-restlet-archetype</name>
