@@ -5,6 +5,7 @@ repository
 .classpath
 .project
 .settings
+bin
 
 # Maven
 target/
