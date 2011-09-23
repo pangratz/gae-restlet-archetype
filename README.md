@@ -1,27 +1,44 @@
-# About
+## About
 
 This Maven Archetype creates a GAE project, preconfigured with the [Restlet](http://www.restlet.org/) RESTful web framework.
 
-# Installation
-
-* checkout project via
-
-		git clone git@github.com:pangratz/gae-restlet-archetype.git
-		cd gae-restlet-archetype
-		
-* install as a new maven archetype
-
-		mvn install
-
-# Usage
+## Usage
 
 * create a new project using the new archetype via
 
-		mvn archetype:generate -DarchetypeGroupId=com.pangratz -DarchetypeArtifactId=gae-restlet-archetype
+		mvn archetype:generate \
+		  -DarchetypeGroupId=com.pangratz \
+		  -DarchetypeArtifactId=gae-restlet-archetype \
+		  -DarchetypeVersion=0.0.2 \
+		  -DremoteRepositories=http://pangratz.github.com/gae-restlet-archetype/repository
 		
 * drink beer, wine or both
 
-# Release
+## Characteristics
+
+* GAE version 1.5.4
+* Restlet version 2.0.8
+
+
+
+-------------
+
+
+
+# Developing
+
+## Local installation
+
+* checkout project via
+
+               git clone git@github.com:pangratz/gae-restlet-archetype.git
+               cd gae-restlet-archetype
+               
+* install as a new maven archetype
+
+               mvn install
+
+## Releasing
 
 1. Release new version/snapshot
 
