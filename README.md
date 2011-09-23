@@ -32,7 +32,7 @@ This Maven Archetype creates a GAE project, preconfigured with the [Restlet](htt
  	1.2. or a new version
 
 		mvn release:clean release:prepare
-		mvn release:prepare
+		mvn release:perform
 	
 2. Update maven repository
 
