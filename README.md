@@ -53,8 +53,8 @@ This Maven Archetype creates a GAE project, preconfigured with the [Restlet](htt
 	
 2. Update maven repository
 
-	git checkout gh-pages
-	./update-directory-index.sh
-	git add .
-	git commit
-	git push
+		git checkout gh-pages
+		./update-directory-index.sh
+		git add .
+		git commit
+		git push
