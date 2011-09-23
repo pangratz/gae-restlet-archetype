@@ -20,3 +20,22 @@ This Maven Archetype creates a GAE project, preconfigured with the [Restlet](htt
 		mvn archetype:generate -DarchetypeGroupId=com.pangratz -DarchetypeArtifactId=gae-restlet-archetype
 		
 * drink beer, wine or both
+
+# Release a new version/snapshot of the archetype
+
+### Release a new snapshot
+
+	mvn clean deploy -P deploy-snapshot
+
+### Release a new version
+
+	mvn release:clean release:prepare
+	mvn release:prepare
+	
+## Update maven repository
+
+	git checkout gh-pages
+	./update-directory-index.sh
+	git add .
+	git commit
+	git push
