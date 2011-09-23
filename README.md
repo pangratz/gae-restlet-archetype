@@ -31,12 +31,12 @@ This Maven Archetype creates a GAE project, preconfigured with the [Restlet](htt
 
 * checkout project via
 
-               git clone git@github.com:pangratz/gae-restlet-archetype.git
-               cd gae-restlet-archetype
+		git clone git@github.com:pangratz/gae-restlet-archetype.git
+		cd gae-restlet-archetype
                
 * install as a new maven archetype
 
-               mvn install
+		mvn install
 
 ## Releasing
 
