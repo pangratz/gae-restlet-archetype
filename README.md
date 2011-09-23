@@ -21,18 +21,20 @@ This Maven Archetype creates a GAE project, preconfigured with the [Restlet](htt
 		
 * drink beer, wine or both
 
-# Release a new version/snapshot of the archetype
+# Release
 
-### Release a new snapshot
+1. Release new version/snapshot
 
-	mvn clean deploy -P deploy-snapshot
+ 	1.1. Release either a new snapshot ...
 
-### Release a new version
+		mvn clean deploy -P deploy-snapshot
 
-	mvn release:clean release:prepare
-	mvn release:prepare
+ 	1.2. or a new version
+
+		mvn release:clean release:prepare
+		mvn release:prepare
 	
-## Update maven repository
+2. Update maven repository
 
 	git checkout gh-pages
 	./update-directory-index.sh
