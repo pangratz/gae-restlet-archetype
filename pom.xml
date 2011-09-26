@@ -11,12 +11,13 @@
 
 	<properties>
 		<altDeploymentRepository>release-repo::default::file:../../repository/releases</altDeploymentRepository>
+		<gitUrl>git@github.com:pangratz/gae-restlet-archetype.git</gitUrl>
 	</properties>
 
 	<scm>
-		<connection>scm:git:git@github.com:pangratz/gae-restlet-archetype.git</connection>
-		<url>scm:git:git@github.com:pangratz/gae-restlet-archetype.git</url>
-		<developerConnection>scm:git:git@github.com:pangratz/gae-restlet-archetype.git</developerConnection>
+		<connection>scm:git:${gitUrl}</connection>
+		<url>scm:git:${gitUrl}</url>
+		<developerConnection>scm:git:${gitUrl}</developerConnection>
 	</scm>
 
 	<build>
