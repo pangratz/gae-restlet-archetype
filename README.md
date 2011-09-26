@@ -9,7 +9,7 @@ This Maven Archetype creates a GAE project, preconfigured with the [Restlet](htt
 		mvn archetype:generate \
 		  -DarchetypeGroupId=com.pangratz \
 		  -DarchetypeArtifactId=gae-restlet-archetype \
-		  -DarchetypeVersion=0.0.3 \
+		  -DarchetypeVersion=0.0.4 \
 		  -DremoteRepositories=http://pangratz.github.com/gae-restlet-archetype/repository
 		
 * drink beer, wine or both
